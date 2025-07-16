@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6W9HE3DWG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-F6W9HE3DWG');
+    </script>
+    <title>Helix Plugins</title>
+    <style>
+        /* Inspired by Helix editor website: dark theme with purple accents, modern typography */
+        body {
+            background-color: #1e1e2e; /* Dark background similar to Helix */
+            color: #cdd6f4; /* Light text for readability */
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #181825; /* Slightly darker shade for header */
+            border-bottom: 2px solid #cba6f7; /* Purple accent border */
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: bold;
+            color: #cba6f7; /* Helix purple for heading */
+        }
+
+        .contact-button {
+            background-color: #cba6f7; /* Purple background */
+            color: #181825; /* Dark text for contrast */
+            border: none;
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+        }
+
+        .contact-button:hover {
+            background-color: #b4befe; /* Lighter purple on hover */
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .plugin-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .plugin-item {
+            background-color: #181825; /* Dark card background */
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            border-left: 4px solid #cba6f7; /* Purple accent on left */
+        }
+
+        .plugin-name {
+            font-size: 1.5rem;
+            margin: 0 0 0.5rem 0;
+            font-weight: bold;
+            color: #cdd6f4;
+        }
+
+        .plugin-desc {
+            margin: 0 0 0.5rem 0;
+            color: #a6adc8; /* Muted text for description */
+        }
+
+        .plugin-link {
+            color: #cba6f7; /* Purple link color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .plugin-link:hover {
+            text-decoration: underline;
+            color: #b4befe; /* Lighter purple on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.8rem;
+            color: #a6adc8;
+        }
+
+        footer a {
+            color: #cba6f7;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .disclaimer {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Helix Plugins</h1>
+        <a href="mailto:contact@helix-plugins.com" class="contact-button">✉️ Contact: contact@helix-plugins.com</a>
+    </header>
+    <main>
+        <ul class="plugin-list">
+            <li class="plugin-item">
+                <h2 class="plugin-name">Scooter.hx</h2>
+                <p class="plugin-desc">Interactive find-and-replace Helix plugin</p>
+                <a class="plugin-link" href="https://github.com/thomasschafer/scooter.hx" target="_blank">View Repository</a>
+            </li>
+            <li class="plugin-item">
+                <h2 class="plugin-name">Switcheroo.hx</h2>
+                <p class="plugin-desc">A helix plugin to switch between `.cpp` and `.h` files with the same base name.</p>
+                <a class="plugin-link" href="https://github.com/godalming123/switcheroo.hx" target="_blank">View Repository</a>
+            </li>
+            <li class="plugin-item">
+                <h2 class="plugin-name">Ghost-Text.hx</h2>
+                <p class="plugin-desc">Use Helix to edit text in the browser! </p>
+                <a class="plugin-link" href="https://github.com/nik-rev/ghost-text.hx" target="_blank">View Repository</a>
+            </li>
+            <li class="plugin-item">
+                <h2 class="plugin-name">File watcher</h2>
+                <p class="plugin-desc">Reload open file on external change </p>
+                <a class="plugin-link" href="https://github.com/mattwparas/helix-file-watcher" target="_blank">View Repository</a>
+            </li>
+            <li class="plugin-item">
+                <h2 class="plugin-name">Smooth-Scrool.hx</h2>
+                <p class="plugin-desc">Smooth scrolling between positions</p>
+                <a class="plugin-link" href="https://github.com/thomasschafer/smooth-scroll.hx" target="_blank">View Repository</a>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p class="disclaimer">I hold no responsibility for the listed plugins. Contact me at contact@helix-plugins.com to add, remove, or modify a listed plugin.</p>
+        Inspired by <a href="https://helix-editor.com/">Helix Editor</a>
+    </footer>
+</body>
+</html>
