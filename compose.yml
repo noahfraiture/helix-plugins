@@ -1,0 +1,15 @@
+services:
+  helix-plugins:
+    image: helix-plugins:prod
+    labels :
+      - "traefik.enable=true"
+      - "traefik.http.routers.helix-plugins.rule=Host(`helix-plugins.com`)"
+      - "traefik.http.routers.helix-plugins.entrypoints=websecure"
+      - "traefik.http.routers.helix-plugins.tls.certresolver=myresolver"
+      - "traefik.http.services.helix-plugins.loadbalancer.server.port=8080"
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true
